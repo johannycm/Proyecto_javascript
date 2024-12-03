@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4 text-center">Registro📄</h1>
+        <form id="formularioRegistro">
+            <div class="mb-4">
+                <label for="nombre" class="block text-sm font-bold mb-2">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="w-full p-2 border rounded">
+                <span id="nombreError" class="text-red-500 hidden">Nombre inválido</span>
+            </div>
+            <div class="mb-4">
+                <label for="apellido" class="block text-sm font-bold mb-2">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required class="w-full p-2 border rounded">
+                <span id="apellidoError" class="text-red-500 hidden">Apellido inválido</span>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded">
+                <span id="emailError" class="text-red-500 hidden">Email inválido</span>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-bold mb-2">Contraseña:</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border rounded">
+                <span id="passwordError" class="text-red-500 hidden">Contraseña inválida</span>
+            </div>
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-sm font-bold mb-2">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="w-full p-2 border rounded">
+                <span id="confirmPasswordError" class="text-red-500 hidden">Las contraseñas no coinciden</span>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrarse</button>
+        </form>
+        <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="../LOGIN/login.html" class="text-blue-500">Inicia sesión</a></p>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>
