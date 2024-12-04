@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./../icono.png">
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex flex-col items-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-5xl mt-10">
+        <h1 class="text-2xl font-bold mb-4 text-center">¡Hola Admin!</h1>
+        <table class="w-full table-auto mb-6">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Nombre</th>
+                    <th class="px-4 py-2">Apellido</th>
+                    <th class="px-4 py-2">Email</th>
+                    <th class="px-4 py-2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- Los usuarios se agregarán aquí -->
+            </tbody>
+        </table>
+        <button id="homeButton" class="bg-green-500 text-white px-4 py-2 rounded-full shadow hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-300">Ir al Inicio</button>
+    </div>
+    <!-- editar usuario -->
+    <div id="editModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <h2 class="text-xl font-bold mb-4 text-center">Editar Usuario</h2>
+            <form id="editForm">
+                <div class="mb-4">
+                    <label for="editNombre" class="block text-sm font-bold mb-2">Nombre:</label>
+                    <input type="text" id="editNombre" name="editNombre" required class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="editApellido" class="block text-sm font-bold mb-2">Apellido:</label>
+                    <input type="text" id="editApellido" name="editApellido" required class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="editEmail" class="block text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="editEmail" name="editEmail" required class="w-full p-2 border rounded">
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Guardar Cambios</button>
+                <button type="button" id="cancelEdit" class="w-full bg-red-500 text-white p-2 rounded mt-2">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./../js/admin.js"></script>
+    <script src="./../js/login.js"></script>
+    <script src="./../js/formulario.js"></script>
+</body>
+</html>
+

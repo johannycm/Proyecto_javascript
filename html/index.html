@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./../icono.png">
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-4 text-center">Registro📄</h1>
+        <h1 class="text-2xl font-bold mb-4 text-center">Registro</h1>
         <form id="formularioRegistro">
             <div class="mb-4">
                 <label for="nombre" class="block text-sm font-bold mb-2">Nombre:</label>
@@ -35,10 +36,10 @@
                 <input type="password" id="confirm-password" name="confirm-password" required class="w-full p-2 border rounded">
                 <span id="confirmPasswordError" class="text-red-500 hidden">Las contraseñas no coinciden</span>
             </div>
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrarse</button>
+            <button type="submit" class="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-2 rounded">Registrarse</button>
         </form>
-        <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="../LOGIN/login.html" class="text-blue-500">Inicia sesión</a></p>
+        <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="./../html/login.html" class="text-pink-500">Inicia sesión</a></p>
     </div>
-    <script src="formulario.js"></script>
+    <script src="./../js/formulario.js"></script>
 </body>
 </html>
