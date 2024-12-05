@@ -18,6 +18,6 @@ document.getElementById('logoutButton').addEventListener('click', function() {
 document.cookie = 'email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 
 // Redirigir a la página de login
-window.location.href = './../html/login.html';  // Redirige a la página de inicio de sesión
+window.location.href = './../html/login.html';
 });
 
