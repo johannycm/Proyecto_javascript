@@ -1,3 +1,8 @@
+/**
+* @function validarFormulario
+* @description Valida el formulario de registro
+* @param {Event} event - El evento de envío del formulario.
+*/
 document.getElementById('formularioRegistro').addEventListener('submit', function(event) {
 event.preventDefault(); // Evita el envío del formulario por defecto
 
@@ -11,9 +16,6 @@ let email = document.getElementById('email').value.trim();
 let password = document.getElementById('password').value.trim();
 let confirmPassword = document.getElementById('confirm-password').value;
 
-// Validaciones de todos los campos:
-
-// Nombre
 if (!/^[a-zA-Z\s]+$/.test(nombre)) {
     document.getElementById('nombreError').classList.remove('hidden');
     valid = false;
@@ -22,6 +24,7 @@ if (!/^[a-zA-Z\s]+$/.test(nombre)) {
 }
 
 // Apellido
+
 if (!/^[a-zA-Z\s]+$/.test(apellido)) {
     document.getElementById('apellidoError').classList.remove('hidden');
     valid = false;
@@ -30,6 +33,7 @@ if (!/^[a-zA-Z\s]+$/.test(apellido)) {
 }
 
 // Correo electrónico
+
 if (!/^[^\s@]+\@[^\s@]+\.[^\s@]+$/.test(email)) {
     document.getElementById('emailError').classList.remove('hidden');
     valid = false;
@@ -38,6 +42,7 @@ if (!/^[^\s@]+\@[^\s@]+\.[^\s@]+$/.test(email)) {
 }
 
 // Contraseña
+
 if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$!_\-.,])[A-Za-z\d$!_\-.,]{8,}$/.test(password)) {
     document.getElementById('passwordError').classList.remove('hidden');
     valid = false;
@@ -46,6 +51,7 @@ if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$!_\-.,])[A-Za-z\d$!_\-.,]{8,}$/.test
 }
 
 // Confirmación de contraseña
+
 if (password !== confirmPassword) {
     document.getElementById('confirmPasswordError').classList.remove('hidden');
     valid = false;
@@ -53,7 +59,17 @@ if (password !== confirmPassword) {
     document.getElementById('confirmPasswordError').classList.add('hidden');
 }
 
-// Si todas las validaciones son correctas, proceder con el registro
+/**
+* @function registrarUsuario
+* @description Registra un nuevo usuario en el sistema.
+* @param {string} nombre - El nombre del usuario.
+* @param {string} apellido - El apellido del usuario.
+* @param {string} email - El email del usuario.
+* @param {string} password - La contraseña del usuario.
+
+*/
+
+
 if (valid) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const userExists = users.some(user => user.email === email);
@@ -66,5 +82,5 @@ if (userExists) {
     alert('Registro completado');
         window.location.href = './../html/login.html';
     }
-    }
+}
 });

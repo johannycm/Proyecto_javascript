@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/styles.css"> <!-- Enlace al archivo CSS para modo oscuro -->
     <link rel="icon" type="image/x-icon" href="./../icono.png">
+    <link rel="stylesheet" href="./../darkmode.css">
 </head>
 <body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center min-h-screen">
+    <div class="absolute top-4 right-4">
+        <button id="darkModeToggle" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300">Dark Mode 🌑</button>
+    </div>
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h1 class="text-2xl font-bold mb-4 text-center">Iniciar Sesión</h1>
         <form id="loginForm">
@@ -24,5 +29,6 @@
         <p class="mt-4 text-center">¿No tienes una cuenta? <a href="./index.html" class="text-pink-500">Regístrate</a></p>
     </div>
     <script src="./../js/login.js"></script>
+    <script src="./../js/darkMode.js"></script>
 </body>
 </html>

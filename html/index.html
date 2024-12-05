@@ -6,40 +6,45 @@
     <title>Registro de Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./../icono.png">
+    <link rel="stylesheet" href="./../darkmode.css">
 </head>
-<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-4 text-center">Registro</h1>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 dark:text-white">
+    <div class="absolute top-4 right-4">
+        <button id="darkModeToggle" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300">Dark Mode 🌑</button>
+    </div>
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md dark:bg-gray-800 dark:text-gray-200">
+        <h1 class="text-2xl font-bold mb-4 text-center dark:text-white">Registro</h1>
         <form id="formularioRegistro">
             <div class="mb-4">
-                <label for="nombre" class="block text-sm font-bold mb-2">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required class="w-full p-2 border rounded">
+                <label for="nombre" class="block text-sm font-bold mb-2 dark:text-gray-200">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200">
                 <span id="nombreError" class="text-red-500 hidden">Nombre inválido</span>
             </div>
             <div class="mb-4">
-                <label for="apellido" class="block text-sm font-bold mb-2">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required class="w-full p-2 border rounded">
+                <label for="apellido" class="block text-sm font-bold mb-2 dark:text-gray-200">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200">
                 <span id="apellidoError" class="text-red-500 hidden">Apellido inválido</span>
             </div>
             <div class="mb-4">
-                <label for="email" class="block text-sm font-bold mb-2">Email:</label>
-                <input type="email" id="email" name="email" required class="w-full p-2 border rounded">
+                <label for="email" class="block text-sm font-bold mb-2 dark:text-gray-200">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200">
                 <span id="emailError" class="text-red-500 hidden">Email inválido</span>
             </div>
             <div class="mb-4">
-                <label for="password" class="block text-sm font-bold mb-2">Contraseña:</label>
-                <input type="password" id="password" name="password" required class="w-full p-2 border rounded">
+                <label for="password" class="block text-sm font-bold mb-2 dark:text-gray-200">Contraseña:</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200">
                 <span id="passwordError" class="text-red-500 hidden">Contraseña inválida</span>
             </div>
             <div class="mb-4">
-                <label for="confirm-password" class="block text-sm font-bold mb-2">Confirmar Contraseña:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required class="w-full p-2 border rounded">
+                <label for="confirm-password" class="block text-sm font-bold mb-2 dark:text-gray-200">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200">
                 <span id="confirmPasswordError" class="text-red-500 hidden">Las contraseñas no coinciden</span>
             </div>
             <button type="submit" class="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-2 rounded">Registrarse</button>
         </form>
-        <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="./../html/login.html" class="text-pink-500">Inicia sesión</a></p>
+        <p class="mt-4 text-center dark:text-gray-200">¿Ya tienes una cuenta? <a href="./../html/login.html" class="text-pink-500 dark:text-pink-400">Inicia sesión</a></p>
     </div>
-    <script src="./../js/formulario.js"></script>
+<script src="./../js/formulario.js"></script>
+<script src="./../js/darkmode.js"></script>
 </body>
 </html>

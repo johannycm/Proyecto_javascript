@@ -1,0 +1,92 @@
+/* Estilos Generales */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Fondo de la página en modo claro */
+
+body {
+  background: linear-gradient(to right, #9b5de5, #f15bb5, #f875aa, #ff616d);
+}
+
+/* Modo Oscuro */
+
+body.dark-mode {
+  background: linear-gradient(to right, #121212, #333333, #444444, #555555);  
+  color: #ffffff;  /* Color del texto en modo oscuro */
+}
+
+/* Fondo de elementos con clase bg-white en modo oscuro */
+
+body.dark-mode .bg-white {
+  background-color: #1e1e1e;  
+}
+
+/* Color del texto de elementos con clase text-gray-800 en modo oscuro */
+
+body.dark-mode .text-gray-800 {
+  color: #e0e0e0;
+}
+
+/* Color del borde en modo oscuro */
+
+body.dark-mode .border {
+  border-color: #333; 
+}
+
+/* Color del texto de elementos con clase text-red-500 en modo oscuro */
+
+body.dark-mode .text-red-500 {
+  color: #ff4d4d;  
+}
+/* Color del enlace en modo oscuro */
+
+body.dark-mode a {
+  color: #ff79c6;
+}
+
+/* Estilos Generales */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Fondo de la página en modo claro */
+body {
+    background: linear-gradient(to right, #9b5de5, #f15bb5, #f875aa, #ff616d);
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background: linear-gradient(to right, #121212, #333333, #444444, #555555);
+    color: #ffffff;
+}
+
+/* Fondo de elementos con clase bg-white en modo oscuro */
+
+body.dark-mode .bg-white {
+    background-color: #1e1e1e;
+}
+
+/* Color del texto de elementos en modo oscuro */
+
+body.dark-mode .text-gray-800 {
+    color: #efeded;
+}
+
+/* Color del borde en modo oscuro */
+
+body.dark-mode .border {
+    border-color: #333;
+}
+
+/* Color del texto de elementos con clase text-red-500 en modo oscuro */
+
+body.dark-mode .text-red-500 {
+    color: #ff4d4d;
+}
+
+/* Color del enlace en modo oscuro */
+
+body.dark-mode a {
+    color: #ff79c6;
+}

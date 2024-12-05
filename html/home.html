@@ -6,8 +6,12 @@
     <title>¡Hola!</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./../icono.png">
+    <link rel="stylesheet" href="./../darkmode.css">
 </head>
 <body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+    <div class="absolute top-4 right-4">
+        <button id="darkModeToggle" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300">Dark Mode 🌑</button>
+    </div>
     <div class="bg-white rounded-lg shadow-lg p-10 text-center max-w-lg mx-auto">
         <h1 class="text-4xl font-bold mb-6 text-gray-800">¡Bienvenido!</h1>
         <p class="text-gray-600 mb-8">Estamos encantados de verte aquí querido usuario. ¡Pronto tendremos más contenido para ti!</p>
@@ -17,5 +21,6 @@
         </div>
     </div>
     <script src="./../js/home.js"></script>
+    <script src="./../js/darkmode.js"></script>
 </body>
 </html>
