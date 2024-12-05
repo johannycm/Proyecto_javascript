@@ -1,5 +1,6 @@
 /**
-* Maneja el evento de envío del formulario de inicio de sesión.
+* @function loginForm
+* @description Maneja el evento de envío del formulario de inicio de sesión.
 * @param {Event} event - El evento de envío del formulario.
 */
 document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -11,8 +12,8 @@ const password = document.getElementById('password').value;  // Obtiene el valor
 const users = JSON.parse(localStorage.getItem('users')) || [];  // Obtiene la lista de usuarios del localStorage
 
 /**
-* Se crea el administrador con sus datos de inicio de sesión.
-* Si el administrador no existe en la lista de usuarios, se agrega.
+* @function admin.
+* @description Verifica si el usuario es un administrador.
 * @param {string} email - El email del administrador.
 * @param {string} password - La contraseña del administrador.
 * @param {string} role - El rol del administrador.

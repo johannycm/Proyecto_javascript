@@ -4,13 +4,13 @@
 * @param {Event} event - El evento de cambio de modo oscuro.
 */
 document.getElementById('darkModeToggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
+document.body.classList.toggle('dark-mode');
 
-  // Guardar preferencia en el localStorage
-  if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('theme', 'dark');
-  } else {
-      localStorage.setItem('theme', 'light');
+// Guardar preferencia en el localStorage
+if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+} else {
+    localStorage.setItem('theme', 'light');
   }
 });
 

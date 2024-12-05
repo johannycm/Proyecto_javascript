@@ -1,7 +1,7 @@
 /**
-* Redirige al usuario a la página de perfil.
 * @function profileButton
 * @description Redirige al usuario a la página de perfil.
+* @param {Event} event - El evento de envío del formulario.
 */
 document.getElementById('profileButton').addEventListener('click', function() {
   window.location.href = './../html/perfil.html';  // Redirige a la página de perfil del usuario

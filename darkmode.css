@@ -4,89 +4,48 @@ body {
 }
 
 /* Fondo de la página en modo claro */
-
 body {
   background: linear-gradient(to right, #9b5de5, #f15bb5, #f875aa, #ff616d);
 }
 
 /* Modo Oscuro */
-
 body.dark-mode {
-  background: linear-gradient(to right, #121212, #333333, #444444, #555555);  
+  background: linear-gradient(to right, #121212, #333333, #444444, #555555);  /* Fondo del cuerpo en modo oscuro */
   color: #ffffff;  /* Color del texto en modo oscuro */
 }
 
-/* Fondo de elementos con clase bg-white en modo oscuro */
-
 body.dark-mode .bg-white {
-  background-color: #1e1e1e;  
+  background-color: #1e1e1e;  /* Fondo de elementos con clase bg-white en modo oscuro */
 }
-
-/* Color del texto de elementos con clase text-gray-800 en modo oscuro */
 
 body.dark-mode .text-gray-800 {
-  color: #e0e0e0;
+  color: #e0e0e0;  /* Color del texto en modo oscuro */
 }
-
-/* Color del borde en modo oscuro */
 
 body.dark-mode .border {
-  border-color: #333; 
+  border-color: #333;  /* Color del borde en modo oscuro */
 }
-
-/* Color del texto de elementos con clase text-red-500 en modo oscuro */
 
 body.dark-mode .text-red-500 {
-  color: #ff4d4d;  
+  color: #ff4d4d;  /* Color del texto en modo oscuro */
 }
-/* Color del enlace en modo oscuro */
 
 body.dark-mode a {
-  color: #ff79c6;
+  color: #ff79c6;  /* Color del enlace en modo oscuro */
 }
 
-/* Estilos Generales */
-body {
-    transition: background-color 0.3s, color 0.3s;
+/* Estilos para inputs en modo claro */
+input {
+  background-color: #ffffff;  /* Fondo del input */
+  color: #000000;  /* Color del texto del input */
+  border: 1px solid #ccc;  /* Borde del input */
+  padding: 0.5rem;  /* Relleno interno del input */
+  border-radius: 0.25rem;  /* Borde redondeado */
 }
 
-/* Fondo de la página en modo claro */
-body {
-    background: linear-gradient(to right, #9b5de5, #f15bb5, #f875aa, #ff616d);
-}
-
-/* Modo Oscuro */
-body.dark-mode {
-    background: linear-gradient(to right, #121212, #333333, #444444, #555555);
-    color: #ffffff;
-}
-
-/* Fondo de elementos con clase bg-white en modo oscuro */
-
-body.dark-mode .bg-white {
-    background-color: #1e1e1e;
-}
-
-/* Color del texto de elementos en modo oscuro */
-
-body.dark-mode .text-gray-800 {
-    color: #efeded;
-}
-
-/* Color del borde en modo oscuro */
-
-body.dark-mode .border {
-    border-color: #333;
-}
-
-/* Color del texto de elementos con clase text-red-500 en modo oscuro */
-
-body.dark-mode .text-red-500 {
-    color: #ff4d4d;
-}
-
-/* Color del enlace en modo oscuro */
-
-body.dark-mode a {
-    color: #ff79c6;
+/* Estilos para inputs en modo oscuro */
+body.dark-mode input {
+  background-color: #333333;  /* Fondo del input en modo oscuro */
+  color: #ffffff;  /* Color del texto del input en modo oscuro */
+  border: 1px solid #555555;  /* Borde del input en modo oscuro */
 }
